@@ -754,10 +754,13 @@ display: none;
   position:absolute;
   top:-10px;
   right:0px;
-  width:280px;
+  width:290px;
   padding-bottom:20px;
 }
 
+.navbar-collapse.in .navbar-brand{
+	display:none;
+}
 
 
 }
@@ -840,5 +843,6 @@ display: none;
     }
   }
 }
+
 
 
