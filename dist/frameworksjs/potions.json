@@ -1,0 +1,14 @@
+var text = '{"potions":[' +
+'{"id":1,"name":"Aging Potion","image": "aging-potion.png","price": 29.99,"effect":"Causes the drinker to advance in age.","ingredients": "Red Wine<br>Prune Juice<br>Hairy Fungus<br>Tortoise Shell<br>Caterpillar<br>Bat Tongue" },' +
+'{"id":2,"name":"Bulgeye Potion","image": "bulgeye-potion.png","price": 19.99,"effect":"It affects ones eyes, causing them to swell.","ingredients": "Beetle eyes<br>Eel eyes" },' +
+'{"id":3,"name":"Dragon Tonic","image": "dragon-tonic.png","price": 64.99,"effect":"A tonic used to cure sick dragons.","ingredients": "Eagle Owl feathers<br>Peacock feathers<br>Giant Purple Toad warts" }, ' +
+'{"id":4,"name":"Love Potion","image": "love-potion.png","price": 29.99,"effect":"The one who drinks it falls deeply in love with the first person they see.","ingredients": "Petals from a red rose<br>Essence of violet<br>Canary flight and down feathers<br>Newt eyes" },' + 
+'{"id":5,"name":"Polyjuice Potion","image": "polyjuice-potion.png","price": 99.99,"effect":"Allows the drinker to assume the form of someone else.","ingredients": "Lacewing flies<br>Leeches<br>Powdered bicorn horn<br>Knotgrass<br>Fluxweed<br>Shredded Boomslang skin" },' + 
+'{"id":6,"name":"Sleeping Draught","image": "sleeping-draught.png","price": 29.99,"effect":"Causes the drinker to fall almost instantaneously into a deep but temporary sleep.","ingredients": "Sprigs of Lavender<br>Measures of Standard Ingredient<br>Blobs of Flobberworm Mucus<br>Valerian sprigs"}]}';
+
+
+
+
+
+       
+     
