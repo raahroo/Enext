@@ -95,6 +95,10 @@ module.exports = function (grunt) {
             dest: 'dist/', 
             filter: 'isFile'}
           ]
+        },
+         js: {
+            src: 'frameworksjs/*',
+            dest: 'dist/'
         }
       }
     });
