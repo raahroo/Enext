@@ -56,6 +56,18 @@ font-style: italic;
 	padding-top:15px;
 }
 
+
+
+.navbar-collapse .shownav {
+  display: none;
+}
+
+.navbar-collapse.in .shownav {
+  display: none;
+}
+
+
+
 .subtitle{
 	font-family: $droid-serif;
 	text-transform: lowercase;
@@ -67,13 +79,8 @@ font-style: italic;
 
 .subtitle:before,
 .subtitle:after {
-  content: "";
+  content: "\2014";
   position: relative;
-  height: 5px;
-  border-bottom: 1px solid $purple;
-
-  top: 0;
-  width: 600px;
 }
 
 .orange{
@@ -181,7 +188,7 @@ border: none;
 }
 
 .submitorange:hover{
-	background-color:$black;
+	background-color:$dark-purple;
 	color:$nocolor;
 }
 
@@ -425,6 +432,9 @@ color:$dark-gray
 
 /*Navegação*/
 
+
+
+
 .floatleft{
  float:left;
  background-color:$purple;
@@ -442,6 +452,7 @@ color:$dark-gray
     color:$dark-purple;
 
 }
+
 
 
   .floatleft a{
@@ -612,6 +623,9 @@ border-color:$nocolor;
     display: none;
 }
 
+.navbar-collapse .shownav {
+display: none;
+}
 
 .navbar-right a{
     float:right;
@@ -680,10 +694,31 @@ border-color:$nocolor;
         border:transparent;
     }
 
+    .modal-body img{
+	padding-top:-20px;
+	}
+
+
 
 }
 
 @media screen and (max-width: 800px) {
+
+
+
+.navbar-collapse.in .shownav {
+  background-color:$nocolor;
+  display: inline;
+  position:absolute;
+  top:-10px;
+  right:0px;
+  width:280px;
+  padding-bottom:20px;
+}
+
+.navbar-left{
+	display: none;
+}
 
 .brandrigs
 {display:none;
@@ -704,10 +739,23 @@ border-color:$nocolor;
     margin: 0px;
     padding: 0px;
     padding-top: 10px;
-     display: block;
+    display: block;
     font-style: italic;
     font-weight: bold;
+}
 
+.navbar-collapse .shownav {
+display: none;
+}
+
+.navbar-collapse.in .shownav {
+  background-color:$nocolor;
+  display: inline;
+  position:absolute;
+  top:-10px;
+  right:0px;
+  width:280px;
+  padding-bottom:20px;
 }
 
 
@@ -716,3 +764,81 @@ border-color:$nocolor;
 
 
 /* Fim Navegação*/
+
+/* Estilos do modal*/
+
+.modal-body{
+	text-align: left;
+	font-style: normal;
+}
+
+
+.modal-body h4{
+	text-align: left;
+}
+
+.modal-body p{
+	text-align: left;
+}
+
+
+.modal-body img{
+	padding-top:70px;
+}
+
+.price{
+	color:$orange;
+}
+
+.price:before {
+    content: "$";
+    margin-right: 6px;
+}
+
+.modal-header{
+	border-color: transparent;
+}
+
+
+/*animação menu*/
+
+
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+  
+  &:hover {
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+  }
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+
+  &.collapsed {
+    .top-bar {
+      transform: rotate(0);      
+    }
+    .middle-bar {
+      opacity: 1;
+    }
+    .bottom-bar {
+      transform: rotate(0);
+    }
+  }
+}
+
+
