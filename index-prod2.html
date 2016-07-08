@@ -5,25 +5,26 @@
 		<title>Merlin's Potions</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/styles.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>		
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>	
 	</head>
-	<body>
+	<body> 
+
 		<nav class="navbar navbar-default">		  
 		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>		    
-		      </button>
+		    <div class="navbar-header">		     
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		          <span class="sr-only">Toggle navigation</span>
+		          <span class="icon-bar top-bar"></span>
+		          <span class="icon-bar middle-bar"></span>
+		          <span class="icon-bar bottom-bar"></span>
+		        </button>
 		      <a class="navbar-brand merlin" href="#"><span class="uppercase"><span class="boldone">Merlin's </span>Potions</span>
 		      <br>
-		      <span class="subtitle">––– fine potions since 1026 –––</span></a>
+		      <span class="subtitle">fine potions since 1026</span></a>
 
 		       <a class="navbar-brand brandrig" href="#"><span><img src="img/bag.png"> <span class="clearbag"><span class="grayone">Bag:</span>1</span></span></a>
 		       <a class="navbar-brand brandrigs" href="#"><span class="frees">Free Shipping</span><br><span class="small">on orders over $50</span></a>
-				<form class="navbar-form navbar-left shownav" role="search">
+				<form class="navbar-form navbar-left" role="search">
 				 	<div class="input-group formerlin">
 				 	<span class="input-group-addon">
 					      <button class="fa-search">
@@ -42,7 +43,19 @@
 		
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse floatleft" id="bs-example-navbar-collapse-1">
+		     <div id="navbar" class="navbar-collapse collapse floatleft">
+
+				 <form class="navbar-form shownav" role="search">
+				 	<div class="input-group formerlin newform">
+				 	<span class="input-group-addon">
+					      <button class="fa-search">
+					      <span class="glyphicon glyphicon-search orange"></span>				      	
+					      </button>
+					    </span>
+					    <input type="text" class="form-control leftborder" placeholder="Search our stock">					    
+					</div>
+				</form>		 
+
 		      <ul class="nav navbar-nav newone">
 		       <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Potions<span class="caret"></span></a>
@@ -115,43 +128,75 @@
 			<div class="flex-container">
 				<h4 class="potionstitle">Potions</h4>
 				<div class="flex-item">	
-					<a class="fancybox" href="img/aging-potion.png" data-fancybox-group="gallery" alt="Aging Potion">	
+					 <a style="width: 100%;" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal" id="0" onclick="pegarId(this.id)">
 						<img src="img/aging-potion.png" class="img-responsive">
 						<h6>Aging Potion - <span class="orange">$29.99</span></h6>
 					</a>
 				</div>
 				<div class="flex-item">
-					<a class="fancybox" href="img/bulgeye-potion.png" data-fancybox-group="gallery" alt="Bulgeye Potion">
+					 <a style="width: 100%;" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal" id="1" onclick="pegarId(this.id)">					
 						<img src="img/bulgeye-potion.png" class="img-responsive">
 						<h6>Bulgeye Potion - <span class="orange">$19.99</span></h6>
 					</a>
 				</div>
 				<div class="flex-item">
-					<a class="fancybox" href="img/dragon-tonic.png" data-fancybox-group="gallery" alt="Dragon Tonic">
+					 <a style="width: 100%;" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal" id="2" onclick="pegarId(this.id)">
+				
 						<img src="img/dragon-tonic.png" class="img-responsive">
 						<h6>Dragon Tonic - <span class="orange">$54.99</span></h6>
 					</a>
 				</div>
 				<div class="flex-item">
-					<a class="fancybox" href="img/love-potion.png" data-fancybox-group="gallery" alt="Love Potion">
+					 <a style="width: 100%;" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal" id="3" onclick="pegarId(this.id)">					
 						<img src="img/love-potion.png" class="img-responsive">
 						<h6>Love Potion - <span class="orange">$29.99</span></h6>
 					</a>
 				</div>
 				<div class="flex-item">
-					<a class="fancybox" href="img/polyjuice-potion.png data-fancybox-group="gallery" alt="Polyjuice Potion">
+				 <a style="width: 100%;" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal" id="4" onclick="pegarId(this.id)">					
 						<img src="img/polyjuice-potion.png" class="img-responsive">
 						<h6>Polyjuice Potion - <span class="orange">$99.99</span></h6>
 					</a>
 				</div>
 				<div class="flex-item">
-					<a class="fancybox" href="img/sleeping-draught.png" data-fancybox-group="gallery" alt="Sleeping Draught">
+				 <a style="width: 100%;" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal" id="5" onclick="pegarId(this.id)">
+					
 						<img src="img/sleeping-draught.png" class="img-responsive">
 						<h6>Sleeping Draught - <span class="orange">$19.99</span></h6>
 					</a>
 				</div>
 			</div>
 		</div>
+
+				  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">
+        </div>
+        <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+               <img id="imagem">
+              </div>
+              <div class="col-md-6">
+                <h4 id="demo"></h4>
+                <h4>Use/Effect</h4>
+                <p id="effects"></p>
+                <h4>Ingredients:</h4>
+                <p id="ingredients"></p>
+                <h4>Price:</h4>
+                <h4 class="price" id="price"></h4> 
+                <button class="btn submitorange">Add to cart</button>              
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
 	
 		<footer class="container-fluid">
 			<div class="row inverter">
@@ -205,5 +250,41 @@
 				</div>
 			</div>
 		</footer>		
-<script src="js/bootstrap.min.js"></script>
+
+  <script src="frameworksjs/jquery-2.1.3.js"></script>
+  <script src="frameworksjs/bootstrap.min.js"> </script>
+  <script src="frameworksjs/potions.json"> </script>
+ 
+  <!-- Script para ler arquivo json-->
+    <script>   
+         function pegarId(clicked_id)
+        { var count = clicked_id;
+         
+          obj = efeito = ingredientes = preco = imagem = JSON.parse(text);
+          document.getElementById("demo").innerHTML =
+          obj.potions[count].name;
+
+        
+          document.getElementById("effects").innerHTML =
+          efeito.potions[count].effect;
+
+          
+          document.getElementById("ingredients").innerHTML =
+          ingredientes.potions[count].ingredients;
+
+        
+          document.getElementById("price").innerHTML =
+          preco.potions[count].price;
+
+          
+          document.getElementById("imagem").innerHTML =
+          "<img class=img-responsive src=img/" + imagem.potions[count].image + ">";
+      
+        };    
+    
+  </script>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+  </body>
 </html>
+
+
